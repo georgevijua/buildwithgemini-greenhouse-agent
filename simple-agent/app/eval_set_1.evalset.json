@@ -1,0 +1,77 @@
+{
+  "eval_set_id": "eval_set_1",
+  "name": "eval_set_1",
+  "eval_cases": [
+    {
+      "eval_id": "Test_my_agent_with_the_message_Whats_the_wea",
+      "conversation": [
+        {
+          "invocation_id": "e-273f340e-6a77-43bf-abf8-9dd8bde9927e",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Test my agent with the message, \"What's the weather in New York?\"\n"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The weather in New York is currently 90°F and sunny.",
+                "thought_signature": "AY89a19WC07gUHdYX30T9fZacmcaJ__OTZdbwqdiDLh2fFrbrrrO0HGorLWhHwYcNlyqgk_BN3OXGytKaAuX_-k_FPxsr8FKx9kWuF3_XDWSfj9ztdzAreEgylugoazrNGEbK97cyDWigBuUUR9stXaa3M_IYdm1SRJwmHj74J1saRiVfyVDclec-cK7ZlbQlrultpLaTX5fHYHRt1zqb7C-mjAQbUOKvo1bgDKYfUvdnQzP"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_4970806",
+                        "args": {
+                          "query": "New York"
+                        },
+                        "name": "get_weather"
+                      },
+                      "thought_signature": "AY89a1_bV0A4vgbe2x74Sf9-kF8tmX3BzVhGogma6ICygnPMuiRlZoPcp5CPVNrvqncS27Zw7AK6T6eHpo-fqKW8N5WT-zyAK56Xl57iSr-yw3cD8Hsy-B7D66JcKvvHVMhxcBhjs7jWs8F-tDt9H58Xrm6exYKHyLl588vRKQ0jYghCf0iBCr0dTCjq5yTDR29jz-4sO2vVNrrglgPU8wyzYpCdPjlQFRTGsOBJj5_gMTSPX-lAgqTEH01qBdPw39EgEv7qKZl0DCCWnlgv2pgbDoFS96sYIiMME0OVOVASaIWRev5o-YyK0wLp8LVBV4Skc2t8-mOqN9aPu90w_8fhT-DIS11iPbakw78c5f8zpntNlkLetUNFES_M-borWCIQBQiQ9n2-wd1YzeyjqJ2hqUL_jpPm4W7pO3r4im3lpSTtHkPRv-SgCCqJH_rHfDStTWPNULSdVmw="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "root_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_4970806",
+                        "name": "get_weather",
+                        "response": {
+                          "result": "It's 90 degrees and sunny."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1793038283.637856
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1793038612.0351825
+    }
+  ],
+  "creation_timestamp": 1793038600.990484
+}
